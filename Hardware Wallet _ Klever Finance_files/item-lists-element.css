@@ -1,0 +1,649 @@
+/* Start Common CSS */
+h2.ile-title {
+    font-size: 22px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+p.ile-content {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+/* End Common CSS */
+
+/* Start Material Bullet Style CSS */
+.ile-material-bullet-style .ile-container-row {
+    display: flex;
+    overflow: hidden;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+}
+.ile-material-bullet-style .ile-container-row:last-child {
+    margin-bottom: 0px !important;
+}
+.ile-material-bullet-style .ile-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.ile-material-bullet-style .ile-image {
+    width: 100px;
+    object-fit: cover;
+}
+.ile-material-bullet-style .ile-content-box {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    border: 0px !important;
+    border-radius: 0px !important;
+}
+.ile-material-bullet-style svg {
+    height: auto;
+}
+/* End Material Bullet Style CSS */
+
+/* Start Shape Bullet Style CSS */
+.ile-shape-bullet-style .ile-container-holder {
+    display: flex;
+}
+.ile-shape-bullet-style .ile-container-icon-line {
+    display: flex;
+    flex-direction: column;    
+}
+.ile-shape-bullet-style .ile-icon-box {
+    flex-shrink: 0;
+    flex-grow: 0;
+    position: relative;
+}
+.ile-shape-bullet-style .ile-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ile-shape-bullet-style .ile-line {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+.ile-container-holder:last-child .ile-line {
+    display: none;
+}
+.ile-shape-bullet-style .ile-content-box {
+    padding: 10px 20px;
+}
+.ile-shape-bullet-style .ile-container-holder:last-child .ile-content-box {
+    margin-bottom: 0px !important;
+}
+.ile-shape-bullet-style .ile-icon-shape {
+    width: 100% !important;
+}
+.ile-shape-bullet-style svg:not(.ile-icon-shape) {
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* End Shape Bullet Style CSS */
+
+/* Start Timeline Bullet Style CSS */
+.ile-timeline-bullet-style .ile-container-holder {
+    display: flex;
+    position: relative;
+}
+.ile-timeline-bullet-style .ile-timeline-vertical {
+    height: 100%;
+    position: absolute;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.ile-timeline-bullet-style .ile-timeline-horizontal {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.ile-timeline-bullet-style .ile-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.ile-timeline-bullet-style .ile-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.ile-timeline-bullet-style .ile-content-box {
+    padding: 10px 20px 10px 20px;
+}
+.ile-timeline-bullet-style .ile-container-holder:last-child {
+    padding-bottom: 0px !important;
+}
+.ile-timeline-bullet-style .ile-container {
+    display: flex;
+}
+.ile-timeline-bullet-style .ile-icon-box svg {
+    height: auto;
+}
+/* End Timeline Bullet Style CSS */
+
+/* Start Alternate Timeline Bullet Style CSS */
+.ile-alternate-timeline-bullet-style .ile-container-holder {
+    display: flex;
+    position: relative;
+    width: 50%;
+    clear: both;
+}
+.ile-alternate-timeline-bullet-style .ile-timeline-left {
+    direction: rtl;
+}
+.ile-alternate-timeline-bullet-style .ile-timeline-right {
+    float: right;
+}
+.ile-alternate-timeline-bullet-style .ile-timeline-vertical {
+    height: 100%;
+    position: absolute;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.ile-alternate-timeline-bullet-style .ile-timeline-horizontal {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.ile-alternate-timeline-bullet-style .ile-image {
+    width: 80px;
+    height: 80px;
+}
+.ile-alternate-timeline-bullet-style .ile-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.ile-alternate-timeline-bullet-style .ile-content-box {
+    padding: 0px 20px;
+}
+.ile-alternate-timeline-bullet-style .ile-container-holder:last-child {
+    padding-bottom: 0px !important;
+}
+.ile-alternate-timeline-bullet-style .ile-container {
+    display: flex;
+}
+.ile-alternate-timeline-bullet-style .ile-icon-box svg {
+    height: auto;
+}
+/* End Alternate Timeline Bullet Style CSS */
+
+/* Start Gradient Ordered Bullet Style CSS */
+.ile-gradient-ordered-bullet-style ol.ile-container-holder {
+    list-style: none;
+    margin: 0px;
+    counter-reset: gradient-counter;
+}
+.ile-gradient-ordered-bullet-style li.ile-content-container {
+    counter-increment: gradient-counter;
+    position: relative;
+}
+.ile-gradient-ordered-bullet-style li.ile-content-container::before {
+    background-color: #FF8181;
+    content: "";
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #1d1f20;
+    content: counter(gradient-counter);
+    display: flex;
+    border-radius: 20px 20px 0 20px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.ile-gradient-ordered-bullet-style li.ile-number-alignment-top {
+    padding-top: 0.1px;
+}
+.ile-gradient-ordered-bullet-style li.ile-number-alignment-top::before {
+    top: 0px;
+}
+.ile-gradient-ordered-bullet-style li.ile-number-alignment-middle::before {
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+.ile-gradient-ordered-bullet-style li.ile-number-alignment-top {
+    padding-bottom: 0.1px;
+}
+.ile-gradient-ordered-bullet-style li.ile-number-alignment-bottom::before {
+    bottom: 0px;
+}
+.ile-gradient-ordered-bullet-style .ile-content-box {
+    border-radius: 10px;
+    padding: 20px 0px 20px 60px;
+    margin: 20px 0px 20px 20px;
+}
+.ile-gradient-ordered-bullet-style .ile-content-container:last-child .ile-content-box {
+    margin-bottom: 0px !important;
+}
+.ile-gradient-ordered-bullet-style li.ile-content-container::before {
+    width: 60px;
+    height: 60px;
+}
+/* End Gradient Ordered Bullet Style CSS */
+
+/* Start Skew Bullet Style CSS */
+.ile-skew-bullet-style .ile-content-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.ile-skew-bullet-style .ile-icon-box {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ile-skew-bullet-style .ile-svg-container {
+    line-height: 0px;
+    margin-left: -30px;
+    margin-top: 40px;
+    position: relative;
+}
+.ile-skew-bullet-style .ile-svg-container svg {
+    height: auto !important;
+    width: 130px;
+}
+.ile-skew-bullet-style .ile-svg-container .ile-order-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ile-skew-bullet-style .ile-content-box {
+    transform: skewX(-15deg);
+    z-index: 1;
+    margin: 40px 0px 0px 15px;
+    padding: 20px 20px 20px 60px;
+    border-radius: 15px;
+}
+.ile-skew-bullet-style .ile-content-box .ile-content-box-skew {
+    transform: skewX(15deg);
+}
+.ile-skew-bullet-style .ile-content-container.ile-number-alignment-top .ile-icon-box {
+    top: 0;
+}
+.ile-skew-bullet-style .ile-content-container.ile-number-alignment-bottom .ile-icon-box {
+    bottom: 0;
+}
+.ile-skew-bullet-style .ile-icon-box svg {
+    height: auto;
+}
+.ile-skew-bullet-style .ile-content-box {
+    border: 2px solid;
+}
+/* End Skew Bullet Style CSS */
+
+/* Start Service Bullet Style CSS */
+.ile-service-bullet-style .ile-container-holder {
+    position: relative;
+}
+.ile-service-bullet-style .ile-inner-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+.ile-service-bullet-style .ile-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.ile-service-bullet-style .ile-content-box {
+    padding: 20px 20px 20px 0px;
+}
+.ile-service-bullet-style .ile-container-holder:last-child {
+    margin-bottom: 0px !important;
+}
+.ile-service-bullet-style .ile-content-box {
+    flex: 1;
+}
+.ile-service-bullet-style .ile-container-holder:before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: calc(100% - 2px);
+    position: absolute;
+    left: 1px;
+    transform: rotate(-4deg);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+.ile-service-bullet-style.rtl .ile-container-holder:before {
+    transform: rotate(4deg);
+}
+.ile-service-bullet-style svg {
+    height: auto;
+}
+/* End Service Bullet Style CSS */
+
+/* Start Gradient Service Bullet Style CSS */
+.ile-gradient-service-bullet-style .ile-container-holder {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.ile-gradient-service-bullet-style .ile-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+}
+.ile-gradient-service-bullet-style.rtl .ile-icon-box {
+    right: 0;
+    left: unset;
+    transform: translateX(50%);
+}
+.ile-gradient-service-bullet-style.ltr .ile-content-box {
+    padding: 20px 20px 20px 60px;
+}
+.ile-gradient-service-bullet-style.rtl .ile-content-box {
+    padding: 20px 60px 20px 20px;
+}
+.ile-gradient-service-bullet-style .ile-container-holder:last-child {
+    margin-bottom: 0px !important;
+}
+.ile-gradient-service-bullet-style .ile-list-number {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ile-gradient-service-bullet-style.rtl .ile-list-number {
+    right: unset;
+    left: 15px;
+}
+.ile-gradient-service-bullet-style .ile-content-box {
+    flex: 1;
+}
+.ile-gradient-service-bullet-style .ile-icon-box:after {
+    content: '';  
+    display: block;
+    position: absolute;
+    bottom: calc(100% + 1px);
+    left: calc(100% + 1px);
+    border-radius: 1px;
+}
+.ile-gradient-service-bullet-style.rtl .ile-icon-box:after {
+    left: unset;
+    right: calc(100% + 1px);
+}
+.ile-gradient-service-bullet-style svg {
+    height: auto;
+}
+/* End Gradient Service Bullet Style CSS */
+
+/* Start Material Curve Bullet Style CSS */
+.ile-material-curve-bullet-style .ile-container-holder {
+    display: flex;
+    position: relative;
+    align-items: stretch;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.ile-material-curve-bullet-style .ile-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: unset !important;
+    position: relative;
+    z-index: 1;
+}
+.ile-material-curve-bullet-style .ile-icon-box:before,
+.ile-material-curve-bullet-style .ile-icon-box:after {
+    content: '';
+    mask-image: url(../image/material-curve.svg);
+    -webkit-mask-image: url(../image/material-curve.svg);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: right;
+    -webkit-mask-position: right;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.ile-material-curve-bullet-style.rtl .ile-icon-box:before,
+.ile-material-curve-bullet-style.rtl .ile-icon-box:after {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.ile-material-curve-bullet-style .ile-icon-box:after {
+    left: 10px;
+    opacity: 20%;
+}
+.ile-material-curve-bullet-style.rtl .ile-icon-box:after {
+    left: -10px;
+}
+.ile-material-curve-bullet-style.rtl .ile-content-box {
+    padding: 10px 20px 10px 20px;
+}
+.ile-material-curve-bullet-style .ile-container-holder:last-child {
+    margin-bottom: 0px !important;
+}
+.ile-material-curve-bullet-style .ile-content-box {
+    flex: 1;
+}
+.ile-material-curve-bullet-style svg {
+    height: auto;
+}
+/* End Material Curve Bullet Style CSS */
+
+/* Start Material Angle Bullet Style CSS */
+.ile-material-angle-bullet-style .ile-container-holder {
+    display: flex;
+    position: relative;
+    align-items: stretch;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.ile-material-angle-bullet-style .ile-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: unset !important;
+    position: relative;
+    z-index: 1;
+}
+.ile-material-angle-bullet-style.ltr .ile-icon-box {
+    padding-right: 10px;
+}
+.ile-material-angle-bullet-style.rtl .ile-icon-box {
+    padding-left: 10px;
+}
+.ile-material-angle-bullet-style .ile-icon-box:before,
+.ile-material-angle-bullet-style .ile-icon-box:after {
+    content: '';
+    background: black;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.ile-material-angle-bullet-style.ltr .ile-icon-box:before,
+.ile-material-angle-bullet-style.ltr .ile-icon-box:after {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+}
+.ile-material-angle-bullet-style.ltr .ile-icon-box:before {    
+    opacity: 20%;
+    right: -5px;
+}
+.ile-material-angle-bullet-style.ltr .ile-icon-box:after {    
+    left: 0;
+}
+.ile-material-angle-bullet-style.ltr .ile-content-box {
+    padding: 10px 20px 10px 20px;
+}
+.ile-material-angle-bullet-style.rtl .ile-icon-box:before,
+.ile-material-angle-bullet-style.rtl .ile-icon-box:after {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+}
+.ile-material-angle-bullet-style.rtl .ile-icon-box:before {    
+    opacity: 20%;
+    left: -5px;
+}
+.ile-material-angle-bullet-style.rtl .ile-icon-box:after {    
+    right: 0;
+}
+.ile-material-angle-bullet-style.rtl .ile-content-box {
+    padding: 10px 20px 10px 20px;
+}
+.ile-material-angle-bullet-style .ile-container-holder:last-child {
+    margin-bottom: 0px !important;
+}
+.ile-material-angle-bullet-style .ile-list-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;  
+    padding: 20px;
+
+}
+.ile-material-angle-bullet-style .ile-content-box {
+    flex: 1;
+}
+.ile-material-angle-bullet-style .ile-list-number:before {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ile-material-angle-bullet-style.ltr .ile-list-number:before {
+    left: 0;
+}
+.ile-material-angle-bullet-style.rtl .ile-list-number:before {
+    right: 0;
+}
+.ile-material-angle-bullet-style svg {
+    height: auto;
+}
+/* End Material Angle Bullet Style CSS */
+
+/* Start Responsive Design CSS */
+@media (max-width: 767px)  {
+    .ile-alternate-timeline-bullet-style .ile-container-holder {
+        width: 100%;
+    }
+    .ile-alternate-timeline-bullet-style .ile-timeline-left {
+        direction: ltr;
+        margin-left: 0px !important;
+    }
+    .ile-alternate-timeline-bullet-style .ile-timeline-right {
+        float: none;
+        margin-right: 0px !important;
+    }
+    .ile-service-bullet-style .ile-container-holder:before {
+        transform: rotate(-6deg);
+    }
+}
+/* End Responsive Design CSS */
+
+/* Start Hover Animation Effect CSS */
+.ile-material-angle-bullet-style .elementor-animation-grow:hover, .ile-material-curve-bullet-style .elementor-animation-grow:hover, .ile-gradient-service-bullet-style .elementor-animation-grow:hover, .ile-service-bullet-style .elementor-animation-grow:hover, .ile-skew-bullet-style .elementor-animation-grow:hover, .ile-material-bullet-style .elementor-animation-grow:hover, .ile-gradient-ordered-bullet-style .elementor-animation-grow:hover {
+    transform: scale(1.03);
+}
+.ile-material-angle-bullet-style .elementor-animation-shrink:hover, .ile-material-curve-bullet-style .elementor-animation-shrink:hover, .ile-gradient-service-bullet-style .elementor-animation-shrink:hover, .ile-service-bullet-style .elementor-animation-shrink:hover, .ile-skew-bullet-style .elementor-animation-shrink:hover, .ile-material-bullet-style .elementor-animation-shrink:hover, .ile-gradient-ordered-bullet-style .elementor-animation-shrink:hover {
+    transform: scale(0.97);
+}
+@keyframes ile-elementor-animation-pulse {
+    25% {
+        transform: scale(1.03);
+    }
+    75% {
+        transform: scale(0.97);
+    }
+}
+.ile-material-angle-bullet-style .elementor-animation-pulse:hover, .ile-material-curve-bullet-style .elementor-animation-pulse:hover, .ile-gradient-service-bullet-style .elementor-animation-pulse:hover, .ile-service-bullet-style .elementor-animation-pulse:hover, .ile-skew-bullet-style .elementor-animation-pulse:hover, .ile-material-bullet-style .elementor-animation-pulse:hover, .ile-gradient-ordered-bullet-style .elementor-animation-pulse:hover {
+    animation-name: ile-elementor-animation-pulse;
+}
+@keyframes ile-elementor-animation-pulse-grow {
+    to {
+        transform: scale(1.03);
+    }
+}
+.ile-material-angle-bullet-style .elementor-animation-pulse-grow:hover, .ile-material-curve-bullet-style .elementor-animation-pulse-grow:hover, .ile-gradient-service-bullet-style .elementor-animation-pulse-grow:hover, .ile-service-bullet-style .elementor-animation-pulse-grow:hover, .ile-skew-bullet-style .elementor-animation-pulse-grow:hover, .ile-material-bullet-style .elementor-animation-pulse-grow:hover, .ile-gradient-ordered-bullet-style .elementor-animation-pulse-grow:hover {
+    animation-name: ile-elementor-animation-pulse-grow;
+}
+@keyframes ile-elementor-animation-pulse-shrink {
+    to {
+        transform: scale(0.97);
+    }
+}
+.ile-material-angle-bullet-style .elementor-animation-pulse-shrink:hover, .ile-material-curve-bullet-style .elementor-animation-pulse-shrink:hover, .ile-gradient-service-bullet-style .elementor-animation-pulse-shrink:hover, .ile-service-bullet-style .elementor-animation-pulse-shrink:hover, .ile-skew-bullet-style .elementor-animation-pulse-shrink:hover, .ile-material-bullet-style .elementor-animation-pulse-shrink:hover, .ile-gradient-ordered-bullet-style .elementor-animation-pulse-shrink:hover {
+    animation-name: ile-elementor-animation-pulse-shrink;
+}
+@keyframes ile-elementor-animation-push {
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.ile-material-angle-bullet-style .elementor-animation-push:hover, .ile-material-curve-bullet-style .elementor-animation-push:hover, .ile-gradient-service-bullet-style .elementor-animation-push:hover, .ile-service-bullet-style .elementor-animation-push:hover, .ile-skew-bullet-style .elementor-animation-push:hover, .ile-material-bullet-style .elementor-animation-push:hover, .ile-gradient-ordered-bullet-style .elementor-animation-push:hover {
+    animation-name: ile-elementor-animation-push;
+}
+@keyframes ile-elementor-animation-pop {
+    50% {
+        transform: scale(1.05);
+    }
+}
+.ile-material-angle-bullet-style .elementor-animation-pop:hover, .ile-material-curve-bullet-style .elementor-animation-pop:hover, .ile-gradient-service-bullet-style .elementor-animation-pop:hover, .ile-service-bullet-style .elementor-animation-pop:hover, .ile-skew-bullet-style .elementor-animation-pop:hover, .ile-material-bullet-style .elementor-animation-pop:hover, .ile-gradient-ordered-bullet-style .elementor-animation-pop:hover {
+    animation-name: ile-elementor-animation-pop;
+}
+.ile-material-angle-bullet-style .elementor-animation-bounce-in:hover, .ile-material-curve-bullet-style .elementor-animation-bounce-in:hover, .ile-gradient-service-bullet-style .elementor-animation-bounce-in:hover, .ile-service-bullet-style .elementor-animation-bounce-in:hover, .ile-skew-bullet-style .elementor-animation-bounce-in:hover, .ile-material-bullet-style .elementor-animation-bounce-in:hover, .ile-gradient-ordered-bullet-style .elementor-animation-bounce-in:hover {
+    transform: scale(1.03);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+.ile-material-angle-bullet-style .elementor-animation-bounce-out:hover, .ile-material-curve-bullet-style .elementor-animation-bounce-out:hover, .ile-gradient-service-bullet-style .elementor-animation-bounce-out:hover, .ile-service-bullet-style .elementor-animation-bounce-out:hover, .ile-skew-bullet-style .elementor-animation-bounce-out:hover, .ile-material-bullet-style .elementor-animation-bounce-out:hover, .ile-gradient-ordered-bullet-style .elementor-animation-bounce-out:hover {
+    transform: scale(0.97);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+.ile-material-angle-bullet-style .elementor-animation-grow-rotate:hover, .ile-material-curve-bullet-style .elementor-animation-grow-rotate:hover, .ile-gradient-service-bullet-style .elementor-animation-grow-rotate:hover, .ile-service-bullet-style .elementor-animation-grow-rotate:hover, .ile-skew-bullet-style .elementor-animation-grow-rotate:hover, .ile-material-bullet-style .elementor-animation-grow-rotate:hover, .ile-gradient-ordered-bullet-style .elementor-animation-grow-rotate:hover {
+    transform: scale(1.03) rotate(2deg);
+}
+.ile-material-angle-bullet-style .elementor-animation-rotate:hover, .ile-material-curve-bullet-style .elementor-animation-rotate:hover, .ile-gradient-service-bullet-style .elementor-animation-rotate:hover, .ile-service-bullet-style .elementor-animation-rotate:hover, .ile-skew-bullet-style .elementor-animation-rotate:hover, .ile-gradient-ordered-bullet-style .elementor-animation-rotate:hover {
+    transform: rotate(2deg);
+}
+/* End Hover Animation Effect CSS */
