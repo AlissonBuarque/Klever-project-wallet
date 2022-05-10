@@ -318,7 +318,8 @@ ul {
 .rightsReserved {
   color: #ffffff;
   background: #000000;
-  padding: 1cm;
+  padding-top: 100px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
