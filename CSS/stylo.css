@@ -124,7 +124,7 @@ header {
   padding-bottom: 100px;
 }
 
-.inicial01 {
+.priceContainer {
   display: flex;
   background: #000000;
   color: #ffffff;
@@ -133,7 +133,7 @@ header {
   font-family: 'Montserrat', sans-serif;
 }
 
-.inicial02 {
+.infoContainer {
   background: #000000;
   color: #ffffff;
   display: flex;
@@ -142,24 +142,20 @@ header {
   margin-top: 1cm;
 }
 
-.inicial03 {
-  background: #ffffff;
-  display: flex;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 65px;
-  align-items: center;
+.assetsContainer {
+  margin-left: 20px;
   margin-bottom: 3cm;
   margin-top: 3cm;
 }
 
 @media (max-width: 992px) {
-  .imgMeio01 {
+  .imgFinance {
     display: none;
   }
 }
 
 @media (max-width: 767px) {
-  .imgMeio {
+  .imgBluetooth {
     width: 100%;
   }
 }
@@ -219,22 +215,22 @@ header {
   background-color: #AA33B5 !important;
 }
 
-.imgMeio {
+.imgBluetooth {
   background: #AA33B5;
 }
 
 
-.holdaling {
+.assetsInfo {
   color: #000000;
-  padding: 100px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.storeColor {
+.assetsColor {
   margin-top: 0.5cm;
   color: rgb(155, 131, 182);
 }
 
-.envolver {
+.features {
   display: flex;
   background: #ebf5f5;
   font-family: 'Montserrat', sans-serif;
@@ -263,7 +259,7 @@ header {
 
 }
 
-.teste01 {
+.offerContainer {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   color: #000000;
@@ -273,12 +269,12 @@ header {
   background: #ffffff;
 }
 
-.envolverJoinSociais {
+.sociaisContainer {
   display: flex;
   background-color: #000000;
 }
 
-.teste02 {
+.communityInfo {
   background: #000000;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
@@ -303,21 +299,21 @@ footer {
   background: #000000;
 }
 
-.fimGlobal {
+.footerSociais {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   display: flex;
   flex-direction: column;
 }
 
-.fimPagina {
+.footerInfo {
   padding: 0px;
   margin-left: 0;
   width: 50%;
   height: 60vh;
 }
 
-.fimPaginaContainer {
+.footerContainer {
   padding: 0px;
   width: 100%;
   margin-left: 0;
@@ -325,7 +321,7 @@ footer {
   flex-direction: row;
 }
 
-.helloFim {
+.rightsReserved {
   color: #ffffff;
   background: #000000;
   padding: 1cm;
